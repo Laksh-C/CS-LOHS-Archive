@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date Select</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <a class="navbar-brand text-white fa fa-home home-icon w3-xxlarge" href="/"></a>
+
+        <ul class="navbar-nav">
+            <li class="nav-item bg-danger">
+                <a class="nav-link text-white" href="/to-do-date-select">Date-Selection</a>
+            </li>
+        </ul>
+    </nav>
+    <h1 class="main-heading">Date Selection</h1>
+    <div class="container" style="text-align: center">
+        <br><br>
+        <div class="jumbotron mt-2">
+            <p class="instructions">Please use the following input to open a to-do list for your desired date...</p>
+
+            <form method="POST" action="/to-do-date-select">
+                <label for="date">Select the Date: </label>
+                <input type="date" name="date">
+                <button type="submit" class="date-button">Open To-Do List</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
